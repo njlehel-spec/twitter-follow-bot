@@ -20,11 +20,11 @@ from twitter import Twitter, OAuth, TwitterHTTPError
 import os
 
 # put your tokens, keys, secrets, and Twitter handle in the following variables
-OAUTH_TOKEN = ""
-OAUTH_SECRET = ""
-CONSUMER_KEY = ""
-CONSUMER_SECRET = ""
-TWITTER_HANDLE = ""
+OAUTH_TOKEN = "1274110761506390016-4OO8BNT0q2rY8XKcViEkKB9I4NKYFs"
+OAUTH_SECRET = "Esa4zQZHEnXwzfvF5OVS1uTFtqkqJXe6n2wkEvP9jcYyw"
+CONSUMER_KEY = "d8MxSNTmgWAMRmNhlXG8Oc9KY"
+CONSUMER_SECRET = "3OaZ7aW3MmnZSmYZtT1V0p7vCZpcoqSkdm9jAFbJGhppSP2hB9"
+TWITTER_HANDLE = "19962221"
 
 # put the full path and file name of the file you want to store your "already followed"
 # list in
@@ -63,7 +63,7 @@ def auto_fav(q, count=100, result_type="recent"):
             print("error: %s" % (str(e)))
 
 
-def auto_rt(q, count=100, result_type="recent"):
+def auto_rt(q, count=100, result_type="mutuals"):
     """
         Retweets tweets that match a certain phrase (hashtag, word, etc.)
     """
